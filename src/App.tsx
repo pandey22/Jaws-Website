@@ -236,7 +236,6 @@ function App() {
                 <span>jawsindia@hotmail.com</span>
               </div>
               <div className="flex items-center space-x-4">
-                <MapPin className="h-6 w-6 text-blue-600 " />
                 <span>92-H6, Straight Mile Road, Sakchi Jamshedpur – 831001, Jharkhand, India.</span>
               </div>
             </div>

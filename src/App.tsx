@@ -262,8 +262,10 @@ function App() {
               </a>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800 text-gray-400">
-              <p>&copy; {new Date().getFullYear()} JAWS. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} JAWS. All rights reserved</p><br />
+               <a href="https://portfolio-website-kshitij-pandeys-projects.vercel.app/">Created by : Kshitij Pandey </a>
             </div>
+            
           </div>
         </footer>
 

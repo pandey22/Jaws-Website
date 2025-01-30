@@ -157,27 +157,27 @@ function App() {
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center hover:transform hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">₹500</h3>
               <p className="mb-4">Provides food for one animal for a week</p>
-              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300">
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300" onClick={() => window.open("https://d1fdloi71mui9q.cloudfront.net/zTsAk3wRn2cDm9Wsvm3a_JAWS_donationlink.pdf", "_blank")} >
                 Donate Now
               </button>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center hover:transform hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">₹2000</h3>
               <p className="mb-4">Covers medical treatment for one animal</p>
-              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300">
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300" onClick={() => window.open("https://d1fdloi71mui9q.cloudfront.net/zTsAk3wRn2cDm9Wsvm3a_JAWS_donationlink.pdf", "_blank")} >
                 Donate Now
               </button>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center hover:transform hover:scale-105 transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">₹5000</h3>
               <p className="mb-4">Sponsors complete care for one animal</p>
-              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300">
+              <button className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors duration-300" onClick={() => window.open("https://d1fdloi71mui9q.cloudfront.net/zTsAk3wRn2cDm9Wsvm3a_JAWS_donationlink.pdf", "_blank")} >
                 Donate Now
               </button>
             </div>
           </div>
           <div className="mt-12 text-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition-colors duration-300 flex items-center mx-auto">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition-colors duration-300 flex items-center mx-auto" onClick={() => window.open("https://d1fdloi71mui9q.cloudfront.net/zTsAk3wRn2cDm9Wsvm3a_JAWS_donationlink.pdf", "_blank")} >
               <CreditCard className="mr-2 h-5 w-5" />
               Custom Amount
             </button>
@@ -186,8 +186,8 @@ function App() {
       </section>
 
       {/* News Section */}
-      <section id="news" className="py-20 text-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="news" className="py-20 text-blue-600 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <h2 className="text-3xl font-bold text-center mb-12">Latest Updates</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {news.map((item, index) => (
@@ -198,7 +198,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-gray-50 text-blue-600">
+      <section id="testimonials" className="py-20 bg-blue-50 text-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">What People Say</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -223,7 +223,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 flex flex-col items-center">
+      <section id="contact" className="py-20 flex flex-col items-center bg-gray-50">
           <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-12 text-blue-600 ml-5">Contact Us</h2>
             <div className="flex flex-col items-center space-y-6">

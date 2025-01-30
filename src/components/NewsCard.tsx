@@ -19,7 +19,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, image, description }) 
         </div>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
-        <button className="mt-4 text-blue-600 hover:text-orange-700 font-medium transition-colors duration-200">
+        <button className="mt-4 text-blue-600 hover:text-orange-700 font-medium transition-colors duration-200" onClick={() => window.open("https://www.instagram.com/j.a.w.s_jharkhand/", "_blank")} >
           Read More →
         </button>
       </div>

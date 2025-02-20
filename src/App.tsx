@@ -3,6 +3,7 @@ import { Heart, PawPrint, Phone, Mail, MapPin, ChevronUp, Menu, X, Instagram, Cr
 import NewsCard from './components/NewsCard';
 import { news } from './data/news';
 import { testimonials } from './data/testimonials';
+import Marquee from 'react-fast-marquee';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -198,29 +199,39 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-blue-50 text-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">What People Say</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    className="h-12 w-12 rounded-full object-cover"
-                  />
-                  <div className="ml-4">
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-gray-500 text-sm">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"{testimonial.text}"</p>
-              </div>
-            ))}
+     
+
+<section id="testimonials" className="py-20 bg-blue-50 text-blue-600">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center mb-12">What People Say</h2>
+  </div>
+
+  {/* Full-width Marquee */}
+  <Marquee pauseOnHover={true} speed={50} className="w-full">
+    <div className="flex gap-14 px-8"> {/* px-8 to prevent cutting off edges */}
+      {testimonials.map((testimonial, index) => (
+        <div 
+          key={index} 
+          className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px]"
+        >
+          <div className="flex items-center mb-4">
+            <img
+              src={testimonial.avatar}
+              alt={testimonial.name}
+              className="h-12 w-12 rounded-full object-cover"
+            />
+            <div className="ml-4">
+              <h3 className="font-semibold">{testimonial.name}</h3>
+              <p className="text-gray-500 text-sm">{testimonial.role}</p>
+            </div>
           </div>
+          <p className="text-gray-600 italic">"{testimonial.text}"</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </Marquee>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 flex flex-col items-center bg-gray-50">

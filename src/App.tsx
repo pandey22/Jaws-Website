@@ -244,7 +244,8 @@ function App() {
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="h-6 w-6 text-blue-600" />
-                <span>jawsindia@hotmail.com</span>
+                <span>
+                  <a href="mailto:jawsindia@hotmail.com">jawsindia@hotmail.com</a></span>
               </div>
               <div className="flex items-center space-x-4">
                 <span>92-H6, Straight Mile Road, Sakchi Jamshedpur – 831001, Jharkhand, India.</span>
